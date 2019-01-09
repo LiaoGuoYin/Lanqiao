@@ -1,0 +1,70 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+
+public class Main{
+	public static void main(String[] args) {
+		DecimalFormat df = new DecimalFormat("0.0000000");
+		int r = 325234;
+		String output1 = df.format(r);
+		System.out.println(output1);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//public class Main{
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		long n = sc.nextLong();
+//		long sum = 0;
+//		for(long i=1;i<=n;i++) {
+//			sum = sum+i;
+//		}
+//		System.out.println(sum);
+//	}
+//}
+
+
+
+
+
+
+
+
+//import java.util.Scanner;
+//
+//public class Main {
+//	public static void main(String[] args) {
+//		int A = 0,B = 0;
+//		
+//		Scanner s1 = new Scanner(System.in);
+//		
+//		while (s1.hasNextInt()) {
+//			A = s1.nextInt();
+//			B = s1.nextInt();
+//		}
+//		
+//		System.out.println(A+B);
+//		
+//	}
+//}

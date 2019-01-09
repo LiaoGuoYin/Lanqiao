@@ -1,0 +1,19 @@
+
+public class test {
+	public static void main(String[] args) {
+		System.out.println(Byte.MAX_VALUE);
+		System.out.println(Short.MAX_VALUE);
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Long.MAX_VALUE);
+		
+	//5.4四舍五入即5
+	//5.5四舍五入即6
+	//得到一个0-1之间的随机浮点数（取不到1）
+	//得到一个0-10之间的随机整数 （取不到10）
+	//开方
+	//次方（2的4次方）
+	//π
+	//自然常数
+		
+	}
+}
