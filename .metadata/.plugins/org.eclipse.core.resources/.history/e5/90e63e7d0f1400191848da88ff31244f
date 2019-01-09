@@ -1,8 +1,0 @@
-
-public class test {
-	public static void main(String[] args) {
-		long n = 2253432333243235324l;
-		System.out.println(Math.pow((1+1.0/n),n)-Math.E);
-		
-	}
-}
