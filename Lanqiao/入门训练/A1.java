@@ -1,3 +1,4 @@
+//A+B问题
 import java.util.Scanner;
 
 public class A1{
