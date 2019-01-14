@@ -3,6 +3,7 @@ package practice;
 import java.util.Scanner;
 import java.util.Arrays;
 
+
 public class Main {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -32,7 +33,7 @@ public class Main {
 		// 操作每一行,截取子数组
 		for (int i = 0; i < m; i++) {
 			int[] SubArr = split_arr(ll[i], rr[i], arr);
-			System.out.println(SubArr[rr[i] - ll[i] - kk[i]]);
+			System.out.println(SubArr[kk[i]]);
 		}
 	}
 
@@ -44,7 +45,11 @@ public class Main {
 			count++;
 		}
 		Arrays.sort(SubArr);
-		return SubArr;
+		int[] new_Arr = new int[SubArr.length];
+		for(int k = 0;k<SubArr.length;k++) {
+			new_Arr[SubArr.length-k-1] = SubArr[k]; 
+		}
+		return new_Arr;
 	}
 }
 
