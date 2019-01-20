@@ -1,7 +1,3 @@
-package practice;
-
-//L1-013 计算阶乘和 （10 分）
-//对于给定的正整数N，需要你计算 S=1!+2!+3!+...+N!。
 import java.util.Scanner;
 
 public class Main3 {
@@ -23,7 +19,7 @@ public class Main3 {
 	}
 }
 // 本以为这是个很简单的问题。。但是被自己复杂化了，其实回过头看，分俩步：
-// 			1. 求1！～N！的和     2. 求每一个i！的值，这里自减迭代自身
+// 1. 求1！～N！的和 2. 求每一个i！的值，这里自减迭代自身
 // 另外，有点服这种解法...
 // String[] factorials = new String[]{
 // "1",
