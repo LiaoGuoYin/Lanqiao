@@ -2,7 +2,7 @@ package practice;
 
 import java.util.Scanner;
 
-public class Main {
+public class B11 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		// 获取字符串的每一位,指数为 a.length-j-1
