@@ -17,15 +17,15 @@ public class L1_005_1 {
 
 		// 输入查询信息(试机座位号码)
 		scanner.next();
-		scanner.nextLine();//吸收换行符
+		scanner.nextLine();// 吸收换行符
 		String str = scanner.nextLine();
 		String[] chaxun = str.split(" ");
-		
+
 		// 查询
-		for(int j = 0;j<chaxun.length;j++) {
+		for (int j = 0; j < chaxun.length; j++) {
 			for (int i = 0; i < arr_cj.length; i++) {
-				if(arr_cj[i][1].equals(chaxun[j])) {
-					System.out.println(arr_cj[i][0] + " " +arr_cj[i][2]);
+				if (arr_cj[i][1].equals(chaxun[j])) {
+					System.out.println(arr_cj[i][0] + " " + arr_cj[i][2]);
 				}
 			}
 		}
