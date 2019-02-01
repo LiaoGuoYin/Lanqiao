@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class binary_search {
     public static void main(String[] args) {
-        int[] arr = new int[] { 2, 3, 5, 6, 12, 32, 34, 42 };
+        int[] arr = new int[]{2, 3, 5, 6, 12, 32, 34, 42};
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         scanner.close();
