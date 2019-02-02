@@ -1,10 +1,14 @@
-# LanQiao and Pat
-  
-一个瓜皮的 `JAVA` 蓝桥官网/PAT 题解集 (带踩坑记录)
+# LanQiao and Pat of Java and Kotlin
 
-假装每天都在更新..  
+蓝桥官网/PAT 题解集 (带踩坑记录)
 
-## 选择合适的分支
+`JAVA` ：瓜皮战士本战士
+
+`Kotlin` ：特别感谢 '瓜皮'大哥 [@czp3009](https://github.com/czp3009) 
+
+假装每天都在更新..
+
+## 分支  
 
 本项目分俩个分支： `master` 和 `develop`
 
