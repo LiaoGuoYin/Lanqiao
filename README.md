@@ -1,6 +1,6 @@
 # LanQiao and Pat
   
-一个瓜皮写的 蓝桥官网/PAT 题解集 (带自己踩过的坑)
+一个瓜皮的 `JAVA` 蓝桥官网/PAT 题解集 (带踩坑记录)
 
 假装每天都在更新..  
 
@@ -13,7 +13,7 @@
 * [develop](https://github.com/Biubang/Lanqiao/tree/develop) 分支是给人用的：目录结构相对复杂但合理，源码可直接运行.
 
 	```
-	使用方法：IDEA 打开项目根目录并加载 Gradle 
+	使用方法：IDEA 打开项目根目录并加载 Gradle.
 
 		在对应的题目上点击左侧的箭头即可运行.
 	```  
