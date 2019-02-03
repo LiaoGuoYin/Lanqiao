@@ -1,4 +1,4 @@
-
+package com.liaoguoyin.pat.团体程序设计天梯赛.L1018;
 
 import java.util.Scanner;
 

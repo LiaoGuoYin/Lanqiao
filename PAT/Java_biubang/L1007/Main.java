@@ -1,58 +1,37 @@
+package com.liaoguoyin.pat.团体程序设计天梯赛.L1007;
 
-
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
+/**
+ * L1-007 念数字 （10 分）
+ * <p>
+ * 编码问题，第一次做这个题的时候，用 swtich 很笨的解决了这题，后来才知道有 Map 这种东西存在
+ */
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String string = scanner.next();// 字段截取
-        scanner.close();
-        char[] charstring = string.toCharArray();
+        String s = scanner.next();
+        Map<Character, String> map = new HashMap<>();
 
-        for (int i = 0; i < charstring.length - 1; i++) {
-            outChar(charstring[i]);
-            System.out.print(" ");
+        map.put('-', "fu");
+        map.put('0', "ling");
+        map.put('1', "yi");
+        map.put('2', "er");
+        map.put('3', "san");
+        map.put('4', "si");
+        map.put('5', "wu");
+        map.put('6', "liu");
+        map.put('7', "qi");
+        map.put('8', "ba");
+        map.put('9', "jiu");
+
+        char[] chars = s.toCharArray();
+
+        for (int i = 0; i < chars.length - 1; i++) {
+            System.out.printf("%s ", map.get(chars[i]));
         }
-        outChar(charstring[charstring.length - 1]);
-
-    }
-
-    //译者注: 这种情况称为编码问题, 通常用数组或者 Map 解决, 否则会带来大量重复编码
-    public static void outChar(char a) {
-        switch (a) {
-            case '-':
-                System.out.print("fu");
-                break;
-            case '0':
-                System.out.print("ling");
-                break;
-            case '1':
-                System.out.print("yi");
-                break;
-            case '2':
-                System.out.print("er");
-                break;
-            case '3':
-                System.out.print("san");
-                break;
-            case '4':
-                System.out.print("si");
-                break;
-            case '5':
-                System.out.print("wu");
-                break;
-            case '6':
-                System.out.print("liu");
-                break;
-            case '7':
-                System.out.print("qi");
-                break;
-            case '8':
-                System.out.print("ba");
-                break;
-            case '9':
-                System.out.print("jiu");
-                break;
-        }
+        System.out.print(map.get(chars[chars.length - 1]));
     }
 }

@@ -1,8 +1,10 @@
-
+package com.liaoguoyin.pat.团体程序设计天梯赛.L1008;
 
 import java.util.Scanner;
 
 /**
+ * L1-008 求整数段和 （10 分）
+ * <p>
  * 这个题考察格式化输出，注意考虑各种换行、占位符的可能情况
  */
 public class Main {
@@ -21,7 +23,7 @@ public class Main {
                 System.out.println();
             }
         }
-        System.out.println("\nSum = " + sum);
+        System.out.format("%nSum = ", sum);
 
     }
 }

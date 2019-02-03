@@ -1,4 +1,4 @@
-
+package com.liaoguoyin.pat.团体程序设计天梯赛.L1042;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

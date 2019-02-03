@@ -1,4 +1,4 @@
-
+package com.liaoguoyin.pat.团体程序设计天梯赛.L1023;
 
 import java.io.BufferedReader;
 import java.io.IOException;
