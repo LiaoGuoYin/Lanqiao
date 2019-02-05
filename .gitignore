@@ -2,8 +2,9 @@
 ### Gradle template
 .gradle
 gradlew.bat
-/build/
-/practice/
+*/build/
+practice/
+
 
 # Ignore Gradle GUI config
 gradle-app.setting
