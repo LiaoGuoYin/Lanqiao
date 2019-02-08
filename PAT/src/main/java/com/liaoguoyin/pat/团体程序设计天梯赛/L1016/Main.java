@@ -3,66 +3,62 @@ package com.liaoguoyin.pat.团体程序设计天梯赛.L1016;
 import java.util.Scanner;
 
 /**
- * 注意char a = 0; (int)a结果是48，自动转为ascii码了
- * 越做越糊涂，TODO明天补，头大
+ * L1-016 查验身份证 （15 分）
+ * <p>
+ * 注意char a = 0; (int)a结果是48，自动转为 unicode 码了
+ * 判断是否是数字：Character.isDigit(); 或者用'0'和'9'逼近
+ * 把问题分解，一部分一部分的写，边写边输出看看读取到的数据对不对
  */
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[] weights = new int[]{1, 0, 10, 9, 8, 7, 6, 5, 4, 3, 2};
         int N = scanner.nextInt();
-        String[] sfzs = new String[N];
-        // 存储sfz
-        for (int i = 0; i < sfzs.length; i++) {
-            sfzs[i] = scanner.next();
+
+        String[] strings = new String[N];
+        for (int i = 0; i < strings.length; i++) {
+            strings[i] = scanner.next();
         }
 
-        int flag = 0;
+        int[] weight = new int[]{7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2};// 各位数字的权重
+        int allFlag = 1;
 
-        for (int i = 0; i < sfzs.length; i++) {
-            String sfz = sfzs[i];
-            String[] arr = sfz.split("");
-            // 检验前17位是否全是数字
-            for (char each : sfz.toCharArray()) {
-                if (each <= '0' || each >= '9') {
-                    flag = -1;
+        for (int i = 0; i < strings.length; i++) {
+            String s = strings[i];
+            char[] chars = s.toCharArray();
+
+            int sum = 0;
+            // 判断前17位是不是数字
+            int flag = 1;
+            for (int j = 0; j < chars.length - 1; j++) {
+                if (chars[j] < '0' || chars[j] > '9') {
+                    flag = 0;
+                    System.out.format("%s%n", strings[i]);
+                    allFlag = 0;// 全局pass失效
                     break;
                 }
-            }
-            if (flag == -1) {
-                System.out.println(sfz);
-                break;
+                sum = sum + weight[j] * Character.getNumericValue(chars[j]);// 加权计算
             }
 
-            String lastint = arr[arr.length - 1];// 检验数
-            int checkint = check(arr);// 计算出来的检验数
-            String[] checklist = new String[]{"1", "0", "X", "9", "8", "7", "6", "5", "4", "3", "2"};
+            if (flag == 0)
+                continue;
 
-            if (checklist[checkint].equals(lastint)) {
-                flag = 1;
-                break;
-            } else {
-                System.out.println(sfz);
+            int i1 = sum % 11;
+            String[] strings1 = new String[]{"1", "0", "X", "9", "8", "7", "6", "5", "4", "3", "2"};
+
+            // 获取应正确检验值
+            String check = strings1[i1];
+
+            // 获取实际检验值
+            String realCheck = Character.toString(chars[17]);
+
+            if (!check.equals(realCheck)) {
+                allFlag = 0;
+                System.out.format("%s%n", strings[i]);
             }
+
         }
-        if (flag == 1) {
+        if (allFlag == 1) {
             System.out.println("All passed");
         }
-
-    }
-
-    // 计算检验数
-    static int check(String[] arr) {
-        int[] coeffcient = new int[]{7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2};
-
-        int sum = 0;
-        for (int i = 0; i < arr.length - 1; i++) {
-            int a = Integer.parseInt(arr[i]);
-            int shu = coeffcient[i] * a;
-            sum += shu;
-        }
-        int checksum = sum % 11;    //译者注: 此处使用 alt+enter 自动简化代码
-        // System.out.println(checksum);
-        return checksum;
     }
 }
