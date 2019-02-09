@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * L1-006 连续因子 （20 分）
+ * 首先找出所有的因子，然后从因子里面不断的累成找到满足条件的最小连续因子
  * TODO
  */
 public class Main {
@@ -11,26 +12,15 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
 
-        int high = (int) Math.sqrt(number);
-        // 因子一定在 [2, maxNumber] 之间
+        int tmp = 1;
+        tmp = tmp * number;
 
-        System.out.format("因子一定在 [2, %d] 之间", high);
-
-        int tmpResult = 0;
-        while (tmpResult != number) {
-            tmpResult = calculate(number, high);
-            System.out.println("正在尝试:" + tmpResult);
-            high--;
+        for (int i = 2; i < 12; i++) {
+            if (tmp < number)
+                tmp = tmp * i;
+            else
+                break;
         }
-        System.out.println("yes");
-    }
 
-    public static int calculate(int data, int maxNumber) {
-        int tmp = data;
-        int tmpResult = maxNumber;
-        for (; tmpResult < data && tmp > 2; tmp--) {
-            tmpResult = tmpResult * (tmp - 1);
-        }
-        return tmpResult;
     }
 }

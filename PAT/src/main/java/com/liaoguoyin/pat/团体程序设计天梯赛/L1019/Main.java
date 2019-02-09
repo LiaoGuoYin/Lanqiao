@@ -1,45 +1,52 @@
 package com.liaoguoyin.pat.团体程序设计天梯赛.L1019;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
- * Pat猜拳
- * 注:当他们喝的酒超过他们的承受量的的时候才倒下
+ * L1-019 谁先倒 （15 分）
+ * <p>
+ * 细心读题：1）当达到酒量之后，还喝一杯，才会倒下..
+ *         2）第二个输出的数据是没醉那个人喝了多少杯..
+ * <p>
+ * 数据的读取和存储：读入每一行line,split(" ")得到每一次的4项猜拳数据
  */
 public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int A = scanner.nextInt();// A酒量
-        int B = scanner.nextInt();// B酒量
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        int AA = A, BB = B;
-        // 猜拳数据
-        int N = scanner.nextInt();// N组数据
-        int[][] shuju = new int[N][4];
+        String s = bufferedReader.readLine();
+        int A = Integer.parseInt(s.split(" ")[0]);// A酒量
+        int B = Integer.parseInt(s.split(" ")[1]);// B酒量
+        int AA = A, BB = B;// 复制A、B酒量
+
+        // 读取猜拳数据
+        int N = Integer.parseInt(bufferedReader.readLine());
+        String[] strings = new String[N];
         for (int i = 0; i < N; i++) {
-            for (int j = 0; j < 4; j++) {
-                shuju[i][j] = scanner.nextInt();
-            }
+            strings[i] = bufferedReader.readLine();
         }
 
-        int sum = 0;// 猜拳喊的和
-        for (int i = 0; A * B >= 0; i++) {
-            sum = shuju[i][0] + shuju[i][2];
-            if (sum == shuju[i][1] && sum != shuju[i][3]) {
+        // System.out.println(Arrays.toString(strings));// 调试查看输入数据是否正确
+        int i = 0;
+        while (A >= 0 && B >= 0) {
+            int aYell = Integer.parseInt(strings[i].split(" ")[0]);
+            int aDo = Integer.parseInt(strings[i].split(" ")[1]);
+            int bYell = Integer.parseInt(strings[i].split(" ")[2]);
+            int bDo = Integer.parseInt(strings[i].split(" ")[3]);
+            if (aYell + bYell == aDo && aDo != bDo) {
                 A--;
-                // System.out.println("A 喝了 " + (i+1));
-            } else if (sum != shuju[i][1] && sum == shuju[i][3]) {
+            } else if (aYell + bYell == bDo && bDo != aDo) {
                 B--;
-                // System.out.println("B 喝了" + i);
-            } else {
-                continue;   //译者注: 注意这里的 unnecessary 提示, 当 continue 是逻辑块的最后一行时不影响程序流程
             }
+            i++;
         }
 
-        if (A == 0) {
-            System.out.printf("A%n%s", AA);
-        } else if (B == 0) {
-            System.out.printf("B%n%s", BB);
+        if (A < 0) {
+            System.out.printf("A%n%s", BB - B);
+        } else if (B < 0) {
+            System.out.printf("B%n%s", AA - A);
         }
     }
 }
