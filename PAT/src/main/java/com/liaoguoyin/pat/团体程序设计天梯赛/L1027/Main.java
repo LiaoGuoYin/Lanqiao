@@ -11,8 +11,8 @@ import java.util.Set;
  * <p>
  * arr 用set储存且降序输出；
  * BufferedReader + InputStreamReader 读取100ms内完事，太酸爽了：
- *      bufferedreader.read()读取单个字符
- *      bufferedreader.readLine()一个文本行
+ * bufferedreader.read()读取单个字符
+ * bufferedreader.readLine()一个文本行
  * StringBuffer类似与一个字符串缓冲区，是不可变字符，同步
  * StringBuilder 不同步，更快，是一个可变的字符串序列
  */
