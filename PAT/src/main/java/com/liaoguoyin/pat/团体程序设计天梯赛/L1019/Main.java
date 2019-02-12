@@ -7,9 +7,7 @@ import java.io.InputStreamReader;
 /**
  * L1-019 谁先倒 （15 分）
  * <p>
- * 细心读题：1）当达到酒量之后，还喝一杯，才会倒下..
- *         2）第二个输出的数据是没醉那个人喝了多少杯..
- * <p>
+ * 细心读题：1）当达到酒量之后，还喝一杯，才会倒下.. 2）第二个输出的数据是没醉那个人喝了多少杯..
  * 数据的读取和存储：读入每一行line,split(" ")得到每一次的4项猜拳数据
  */
 public class Main {
@@ -45,7 +43,7 @@ public class Main {
 
         if (A < 0) {
             System.out.printf("A%n%s", BB - B);
-        } else if (B < 0) {
+        } else {
             System.out.printf("B%n%s", AA - A);
         }
     }
