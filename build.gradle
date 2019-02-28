@@ -24,6 +24,7 @@ allprojects {
 
     dependencies {
         implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+        compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     }
 
     compileKotlin {
