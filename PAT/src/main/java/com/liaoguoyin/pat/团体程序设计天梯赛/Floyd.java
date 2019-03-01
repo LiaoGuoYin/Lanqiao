@@ -5,11 +5,22 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * 常见的数据结构之 Floyd 求解"多源最短路问题"（非负环图）：
+ * Floyd 求解"多源最短路径"（非负环图）：
  * 思路: 如果要让任意俩点（顶点a到顶点b）之间的路程变短，只能引入第三个点（顶点k），并通过顶点k中转即 a->k->b，才有可能缩短顶点a到顶点b的路程
  * 实现: 有关图论的问题，首先当然要存储下各条边，一般用邻接矩阵来存储;初始化填入各条边的权重之后，那么遍历比较ints[i][j] 和 ints[i][k] +ints[k][j]的大小，就能得到最短路径矩阵
  * （思路很简单，但是要注意：放行的顶点k，要放在循坏的最外层，放在里面遍历是可能不彻底的）
  * reference: http://wiki.jikexueyuan.com/project/easy-learn-algorithm/floyd.html
+ *
+ * demo data:
+ * 4 8
+ * 1 2 2
+ * 1 3 6
+ * 1 4 4
+ * 2 3 3
+ * 3 1 7
+ * 3 4 1
+ * 4 1 5
+ * 4 3 12
  */
 public class Floyd {
     public static void main(String[] args) throws IOException {
@@ -26,7 +37,7 @@ public class Floyd {
         }
 
         // 邻接矩阵初始化
-        int inf = 999;
+        int inf = 999;// infinity无限的，可以提前估计一下
         int[][] ints = new int[n][n];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -46,17 +57,15 @@ public class Floyd {
         }
 
         // Floyd算法优化
-        for (int k = 0; k <n; k++) {
+        for (int k = 0; k < n; k++) {
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
                     if (ints[i][j] > ints[i][k] + ints[k][j]) {
                         ints[i][j] = ints[i][k] + ints[k][j];
-
                     }
                 }
             }
         }
-
 
         // out
         for (int i = 0; i < n; i++) {
