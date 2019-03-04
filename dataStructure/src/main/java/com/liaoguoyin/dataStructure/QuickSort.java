@@ -1,4 +1,4 @@
-package com.liaoguoyin.pat.团体程序设计天梯赛;
+package com.liaoguoyin.dataStructure;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package com.liaoguoyin.pat.团体程序设计天梯赛;
+package com.liaoguoyin.dataStructure;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -41,7 +41,7 @@ public class Dijkstra {
         // 以顶点1为起点的最短路
         int[] book = new int[n];// 记录元素是否是最短路上的元素
         int[] dis = new int[n];// dis数组记录最短路尝试的路径
-        int min;
+        int min, mif = 999;
         int u = 0;
         // 初始化dis数组、book数组
         for (int i = 0; i < n; i++) {
@@ -56,7 +56,7 @@ public class Dijkstra {
         for (int i = 0; i < n; i++) {
 
             // 找到book非1的最短路对应顶点u
-            min = inf;
+            min = mif;
             for (int j = 0; j < n; j++) {
                 if (book[j] == 0 && dis[j] < min) {
                     min = dis[j];
