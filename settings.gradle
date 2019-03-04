@@ -1,5 +1,6 @@
 rootProject.name = '蓝桥与PAT'
+
 include '蓝桥'
 include 'PAT'
-include 'classicDataStructure'
+include 'dataStructure'
 
