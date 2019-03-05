@@ -3,5 +3,5 @@ rootProject.name = '蓝桥与PAT'
 include '蓝桥'
 include 'PAT'
 include 'dataStructure'
-include 'IndexInit'
+include 'IndexBuild'
 
