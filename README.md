@@ -18,8 +18,9 @@ IDEA 打开项目根目录并加载 Gradle.
 
 Pat 题目索引
 
-| ID | Title | JAVA | Kotlin |  
-| :--- | :---------- | :-------------: | :-------: |   
+| ID | Title | Java | Kotlin |  
+| :--- | :---------- | :-------------: | :-------: |  
+| L1-001 | Hello World | [Java](PAT/src/main/java/com/liaoguoyin/pat/%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B/L1001/Main.java) | [Kotlin](PAT/src/main/kotlin/com/hiczp/pat/gplt/L1-001%20Hello%20World.kt) | 
 | L1-002 | 打印沙漏 | [Java](PAT/src/main/java/com/liaoguoyin/pat/%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B/L1002/Main.java) | [Kotlin](PAT/src/main/kotlin/com/hiczp/pat/gplt/L1-002%20%E6%89%93%E5%8D%B0%E6%B2%99%E6%BC%8F.kt) |
 | L1-003 | 个位数统计 | [Java](PAT/src/main/java/com/liaoguoyin/pat/%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B/L1003/Main.java) | [Kotlin](PAT/src/main/kotlin/com/hiczp/pat/gplt/L1-003%20%E4%B8%AA%E4%BD%8D%E6%95%B0%E7%BB%9F%E8%AE%A1.kt) |
 | L1-004 | 计算摄氏温度 | [Java](PAT/src/main/java/com/liaoguoyin/pat/%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B/L1004/Main.java) | [Kotlin](PAT/src/main/kotlin/com/hiczp/pat/gplt/L1-004%20%E8%AE%A1%E7%AE%97%E6%91%84%E6%B0%8F%E6%B8%A9%E5%BA%A6.kt) |
@@ -79,4 +80,4 @@ Pat 题目索引
 | L2002 | 链表去重  | | |
 | L2003 | 月饼 | | |
 | L2004 | 这是二叉搜索树吗？ | | |
-| L2005 | 集合相似度 |[查看题解](https://github.com/Biubang/Lanqiao/blob/master/PAT/src/main/java/com/liaoguoyin/pat/%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B/L2005/com.liaoguoyin.IndexBuild.Indexbuild.java) |   || L1-001 | Hello World | [Java](PAT/src/main/java/com/liaoguoyin/pat/%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B/L1001/Main.java) | [Kotlin](PAT/src/main/kotlin/com/hiczp/pat/gplt/L1-001%20Hello%20World.kt) |
+| L2005 | 集合相似度 |[Java](https://github.com/Biubang/Lanqiao/blob/master/PAT/src/main/java/com/liaoguoyin/pat/%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B/L2005/com.liaoguoyin.IndexBuild.Indexbuild.java) |   || L1-001 | Hello World | [Java](PAT/src/main/java/com/liaoguoyin/pat/%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B/L1001/Main.java) | [Kotlin](PAT/src/main/kotlin/com/hiczp/pat/gplt/L1-001%20Hello%20World.kt) |
