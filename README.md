@@ -1,21 +1,19 @@
 # LanQiao and Pat of Java and Kotlin
+蓝桥官网 / PAT 题解集 (带踩坑记录)
 
-蓝桥官网/PAT 题解集 (带踩坑记录)
+`JAVA`： 瓜皮战士本战士
 
-`JAVA` ：瓜皮战士本战士
+`Kotlin`： '瓜皮'大哥 [@czp3009](https://github.com/czp3009) 
 
-`Kotlin` ：'瓜皮'大哥 [@czp3009](https://github.com/czp3009) 
-
-假装每天都在更新..
+假装每天都在更新...
 
 ## 使用方法  
-
-IDEA 打开项目根目录并加载 Gradle.
+Fork 后用 IDEA 打开项目, 然后 import Gradle project.
 
 在对应的题目上点击左侧的箭头即可运行.
-	
-## 目录索引
 
+## 目录索引
+<!-- auto generate -->
 Pat 题目索引
 
 | ID | Title | Java | Kotlin |  
@@ -136,7 +134,7 @@ Pat 题目索引
 | [L1027](PAT/src/main/java/com/liaoguoyin/pat/%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B/L1027/Main.java) |
 | [L1028](PAT/src/main/java/com/liaoguoyin/pat/%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B/L1028/Main.java) |
 | [L1029](PAT/src/main/java/com/liaoguoyin/pat/%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B/L1029/Main.java) |
-| [L1030](PAT/src/main/java/com/liaoguoyin/pat/%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B/L1030/Main.java) |
+| [L1030](PAT/src/mainparent/java/com/liaoguoyin/pat/%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B/L1030/Main.java) |
 | [L1031](PAT/src/main/java/com/liaoguoyin/pat/%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B/L1031/Main.java) |
 | [L1032](PAT/src/main/java/com/liaoguoyin/pat/%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B/L1032/Main.java) |
 | [L1033](PAT/src/main/java/com/liaoguoyin/pat/%E5%9B%A2%E4%BD%93%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A9%E6%A2%AF%E8%B5%9B/L1033/Main.java) |
