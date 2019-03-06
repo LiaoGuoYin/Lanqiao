@@ -4,14 +4,19 @@ import java.io.*;
 import java.net.URLEncoder;
 import java.util.Arrays;
 
+/**
+ * 笨办法输入路径，生成索引目录
+ */
 public class Indexbuild {
     public static void main(String[] args) throws IOException {
         File file0 = new File("README.md");
-        FileWriter fileWriter = new FileWriter(file0, true);
+        FileWriter fileWriter = new FileWriter(file0, true);//追加输出
         PrintWriter printWriter = new PrintWriter(fileWriter);
 
         File file = new File("PAT/src/main/kotlin/com/hiczp/pat/gplt");
         File[] files = file.listFiles();
+
+        assert files != null;
         Arrays.sort(files);
 
         String[] id = new String[files.length];
@@ -31,7 +36,7 @@ public class Indexbuild {
         printWriter.close();
     }
 
-    public static String urlencode(String s) throws UnsupportedEncodingException {
+    private static String urlencode(String s) throws UnsupportedEncodingException {
         return URLEncoder.encode(s, "UTF-8").replaceAll("\\+", "%20").replaceAll("%2F", "/");
     }
 }
