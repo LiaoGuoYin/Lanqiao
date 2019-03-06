@@ -3,7 +3,7 @@ package com.liaoguoyin.dataStructure;
 import java.util.Arrays;
 
 /**
- * 快速排序
+ * 快速排序QuickSort
  */
 public class QuickSort {
 

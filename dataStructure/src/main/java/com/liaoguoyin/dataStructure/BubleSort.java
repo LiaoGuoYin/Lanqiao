@@ -3,7 +3,7 @@ package com.liaoguoyin.dataStructure;
 import java.util.Arrays;
 
 /**
- * 冒泡排序：
+ * 冒泡排序BubleSort
  * 邻居间比较，双重嵌套循环，时间复杂度O(N2)
  * 注意操作内层循环变量的时候考虑边界情况要合理，不要越界或者漏掉了
  */

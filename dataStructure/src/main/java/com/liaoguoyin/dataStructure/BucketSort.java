@@ -3,7 +3,7 @@ package com.liaoguoyin.dataStructure;
 import java.util.Arrays;
 
 /**
- * 桶排序
+ * 桶排序BuckedSort
  */
 public class BucketSort {
     public static void main(String[] args) {

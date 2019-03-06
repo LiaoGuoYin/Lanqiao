@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * 栈Stack
- * 方法有：构造方法、入栈、出栈、查看栈顶、动态扩容、基于动态数组的栈实现、基于链表的栈实现
+ * 实现了：构造方法、入栈、出栈、查看栈顶、动态扩容、基于动态数组的栈实现、基于链表的栈实现
  */
 public class Stack {
     private Object[] objArray;

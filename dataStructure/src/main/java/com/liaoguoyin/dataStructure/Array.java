@@ -1,8 +1,8 @@
 package com.liaoguoyin.dataStructure;
 
 /**
- * 数组类
- * 操作有:初始化、增加元素、删除元素、查找、更新、输出、排序
+ * 数组Array
+ * 实现了:初始化、增加元素、删除元素、查找、更新、输出、排序
  */
 public class Array {
     private int[] intArray;
