@@ -20,17 +20,19 @@ fun main() {
             it to index(it)
         }.forEach { site, problemSets ->
             if (problemSets.isEmpty()) return@forEach
-            writer.write("$site ")
             problemSets.forEach { problemSetName, problems ->
-                writer.writeLine(problemSetName)
+                writer.writeLine("$site $problemSetName")
                 writer.newLine()
                 writer.writeLine("| ID | Title | Solution |")
-                writer.writeLine("| :----: | :----: | :----: |")
+                writer.writeLine("| :--- | :---------- | :----: |")
                 problems.forEach { problem ->
                     writer.write("| ${problem.id} | ${problem.title} | ")
                     problem.solution.forEach { language, file ->
                         if (file != null) {
-                            writer.write("[${language.toString().toLowerCase().capitalize()}](${file.path}) ")
+                            writer.write(
+                                "[${language.toString().toLowerCase().capitalize()}]" +
+                                        "(${file.path.replace(" ", "%20")}) "
+                            )
                         }
                     }
                     writer.writeLine("|")
