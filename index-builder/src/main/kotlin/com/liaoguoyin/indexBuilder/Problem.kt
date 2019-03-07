@@ -3,6 +3,9 @@ package com.liaoguoyin.indexBuilder
 import java.io.File
 import java.nio.file.Paths
 
+/**
+ * 该类代表一个题目
+ */
 @Suppress("MemberVisibilityCanBePrivate")
 class Problem(
     val site: Site,
@@ -17,6 +20,9 @@ class Problem(
         idAndTitle.substringAfter(' ')
     )
 
+    /**
+     * 取得该题目对应的解决方案, 如果对应的语言没有解决方案, 则 value 为 null
+     */
     val solution: Map<Language, File?>
         get() = directoryMapping[site]?.get(problemSet)?.mapValues { (language, parentPath) ->
             val problemDirectory = Paths.get("$site/src/main/").resolve(parentPath).toFile()

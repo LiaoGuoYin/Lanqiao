@@ -17,6 +17,9 @@ enum class Language {
     KOTLIN
 }
 
+/**
+ * 题目集到目录的映射关系
+ */
 @Suppress("SpellCheckingInspection")
 val directoryMapping = mapOf(
     Site.PAT to mapOf(

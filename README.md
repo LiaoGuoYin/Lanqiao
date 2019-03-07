@@ -12,6 +12,9 @@ Fork 后用 IDEA 打开项目, 然后 import Gradle project.
 
 在对应的题目上点击左侧的箭头即可运行.
 
+## 生成索引
+以 `rootProject` 为工作目录运行 `index-builder` 中的 `IndexBuilder.kt`
+
 ## 目录索引
 <!-- auto generate -->
 PAT 团体程序设计天梯赛-练习集
