@@ -1,4 +1,4 @@
-package com.liaoguoyin.dataStructure.BubleSort;
+package com.liaoguoyin.dataStructure;
 
 import java.util.Arrays;
 

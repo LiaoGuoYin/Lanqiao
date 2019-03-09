@@ -1,4 +1,4 @@
-package com.liaoguoyin.dataStructure.Queue;
+package com.liaoguoyin.dataStructure;
 
 /**
  * 单向队列Queue

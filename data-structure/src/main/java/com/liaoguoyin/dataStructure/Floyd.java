@@ -1,4 +1,4 @@
-package com.liaoguoyin.dataStructure.Floyd;
+package com.liaoguoyin.dataStructure;
 
 import java.io.BufferedReader;
 import java.io.IOException;

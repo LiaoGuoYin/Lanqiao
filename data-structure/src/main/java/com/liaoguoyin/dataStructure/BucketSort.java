@@ -1,4 +1,4 @@
-package com.liaoguoyin.dataStructure.BucketSort;
+package com.liaoguoyin.dataStructure;
 
 import java.util.Arrays;
 

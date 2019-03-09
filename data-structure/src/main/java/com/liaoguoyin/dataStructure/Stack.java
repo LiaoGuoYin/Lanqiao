@@ -1,4 +1,4 @@
-package com.liaoguoyin.dataStructure.Stack;
+package com.liaoguoyin.dataStructure;
 
 import java.util.Arrays;
 

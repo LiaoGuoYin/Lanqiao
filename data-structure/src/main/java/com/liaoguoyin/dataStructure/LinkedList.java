@@ -1,4 +1,4 @@
-package com.liaoguoyin.dataStructure.LinkedList;
+package com.liaoguoyin.dataStructure;
 
 
 /**

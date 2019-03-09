@@ -1,4 +1,4 @@
-package com.liaoguoyin.dataStructure.Array;
+package com.liaoguoyin.dataStructure;
 
 /**
  * 数组Array

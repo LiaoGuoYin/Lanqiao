@@ -1,4 +1,4 @@
-package com.liaoguoyin.dataStructure.Dijkstra;
+package com.liaoguoyin.dataStructure;
 
 import java.io.BufferedReader;
 import java.io.IOException;

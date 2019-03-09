@@ -95,7 +95,7 @@ PAT 团体程序设计天梯赛-练习集
 | L2-016 | 愿天下有情人都是失散多年的兄妹 | |
 | L2-017 | 人以群分 | [Java](PAT/src/main/java/com/liaoguoyin/pat/团体程序设计天梯赛/L2017/Main.java) |
 | L2-018 | 多项式A除以B | |
-| L2-019 | 悄悄关注 | |
+| L2-019 | 悄悄关注 | [Java](PAT/src/main/java/com/liaoguoyin/pat/团体程序设计天梯赛/L2019/Main.java) |
 | L2-020 | 功夫传人 | |
 | L2-021 | 点赞狂魔 | |
 | L2-022 | 重排链表 | |
@@ -136,6 +136,13 @@ PAT 团体程序设计天梯赛-练习集
 | A3 | 圆的面积 | [Java](蓝桥/src/main/java/com/liaoguoyin/蓝桥/入门训练/A3/Main.java) |
 | A4 | Fibonacci数列 | [Java](蓝桥/src/main/java/com/liaoguoyin/蓝桥/入门训练/A4) |
 
+蓝桥 算法练习
+
+| ID | Title | Solution |
+| :--- | :---------- | :----: |
+| C1 | 区间k大数查询 | [Java](蓝桥/src/main/java/com/liaoguoyin/蓝桥/算法练习/C1/Main.java) |
+| C2 | 最大最小公倍数 | [Java](蓝桥/src/main/java/com/liaoguoyin/蓝桥/算法练习/C2/Main.java) |
+
 蓝桥 基础训练
 
 | ID | Title | Solution |
@@ -152,11 +159,4 @@ PAT 团体程序设计天梯赛-练习集
 | B10 | 十进制转十六进制 | [Java](蓝桥/src/main/java/com/liaoguoyin/蓝桥/基础训练/B10/Main.java) |
 | B11 | 十六进制转十进制 | [Java](蓝桥/src/main/java/com/liaoguoyin/蓝桥/基础训练/B11/Main.java) |
 | B13 | 数列排序 | [Java](蓝桥/src/main/java/com/liaoguoyin/蓝桥/基础训练/B13/Main.java) |
-
-蓝桥 算法练习
-
-| ID | Title | Solution |
-| :--- | :---------- | :----: |
-| C1 | Unknown | [Java](蓝桥/src/main/java/com/liaoguoyin/蓝桥/算法练习/C1/Main.java) |
-| C2 | Unknown | [Java](蓝桥/src/main/java/com/liaoguoyin/蓝桥/算法练习/C2/Main.java) |
 
