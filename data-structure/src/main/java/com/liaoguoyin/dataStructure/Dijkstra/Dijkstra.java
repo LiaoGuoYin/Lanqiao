@@ -84,7 +84,7 @@ public class Dijkstra {
         }
 
         System.out.println("最短路：");
-        for (int i = 0; i <n; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.print(dis[i] + " ");
         }
 
