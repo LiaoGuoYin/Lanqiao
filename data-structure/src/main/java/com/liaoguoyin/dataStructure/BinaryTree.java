@@ -2,6 +2,7 @@ package com.liaoguoyin.dataStructure;
 
 /**
  * 二叉树BinaryTree
+ * 二叉树里面的遍历，并没有学数据结构的时候书上写的那么复杂：迭代就完事了
  */
 public class BinaryTree {
     private TreeNode root;
@@ -12,21 +13,28 @@ public class BinaryTree {
 
     // test
     public static void main(String[] args) {
-        TreeNode rootNode = new TreeNode(1, "testo");
-        TreeNode aNode = new TreeNode(1, "test1");
-        TreeNode bNode = new TreeNode(1, "test2");
-        TreeNode cNode = new TreeNode(1, "test3");
-        TreeNode dNode = new TreeNode(1, "test4");
-        TreeNode eNode = new TreeNode(1, "testtt");
+        TreeNode rootNode = new TreeNode(1, "A");
+        TreeNode aNode = new TreeNode(1, "B");
+        TreeNode bNode = new TreeNode(1, "C");
+        TreeNode cNode = new TreeNode(1, "D");
+        TreeNode dNode = new TreeNode(1, "E");
+        TreeNode eNode = new TreeNode(1, "F");
+        TreeNode gNode = new TreeNode(1, "G");
         BinaryTree binaryTree = new BinaryTree(rootNode);
         rootNode.leftNode = aNode;
         rootNode.rightNode = bNode;
         aNode.leftNode = cNode;
-        bNode.rightNode = dNode;
-        dNode.leftNode = eNode;
+        aNode.rightNode = dNode;
+        bNode.leftNode = eNode;
+        bNode.rightNode = gNode;
 
         System.out.println(binaryTree.getHeight());
 
+        binaryTree.beforeOrder(rootNode);
+        System.out.println();
+        binaryTree.midOrder(rootNode);
+        System.out.println();
+        binaryTree.afterOrder(rootNode);
 
     }
 
@@ -48,7 +56,7 @@ public class BinaryTree {
         return getSize(root);
     }
 
-    public int getSize(TreeNode node) {
+    private int getSize(TreeNode node) {
         if (node == null) {
             return 0;
         }
@@ -57,6 +65,34 @@ public class BinaryTree {
         int rightSize = getSize(node.rightNode);
         return (leftSize + rightSize + 1);
     }
+
+    private void beforeOrder(TreeNode node) {
+        if (node == null) {
+            return;
+        }
+        System.out.print(node.data + " ");
+        beforeOrder(node.leftNode);
+        beforeOrder(node.rightNode);
+    }
+
+    private void midOrder(TreeNode node) {
+        if (node == null) {
+            return;
+        }
+        midOrder(node.leftNode);
+        System.out.print(node.data + " ");
+        midOrder(node.rightNode);
+    }
+
+    private void afterOrder(TreeNode node) {
+        if (node == null) {
+            return;
+        }
+        afterOrder(node.leftNode);
+        afterOrder(node.rightNode);
+        System.out.print(node.data + " ");
+    }
+
 
 }
 
