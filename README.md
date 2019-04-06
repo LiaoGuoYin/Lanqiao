@@ -29,7 +29,7 @@ PAT 团体程序设计天梯赛-练习集
 | L1-006 | 连续因子 | [Java](PAT/src/main/java/com/liaoguoyin/pat/团体程序设计天梯赛/L1006/Main.java) [Kotlin](PAT/src/main/kotlin/com/hiczp/pat/gplt/L1-006%20连续因子.kt) |
 | L1-007 | 念数字 | [Java](PAT/src/main/java/com/liaoguoyin/pat/团体程序设计天梯赛/L1007/Main.java) [Kotlin](PAT/src/main/kotlin/com/hiczp/pat/gplt/L1-007%20念数字.kt) |
 | L1-008 | 求整数段和 | [Java](PAT/src/main/java/com/liaoguoyin/pat/团体程序设计天梯赛/L1008/Main.java) [Kotlin](PAT/src/main/kotlin/com/hiczp/pat/gplt/L1-008%20求整数段和.kt) |
-| L1-009 | N个数求和 | [Kotlin](PAT/src/main/kotlin/com/hiczp/pat/gplt/L1-009%20N个数求和.kt) |
+| L1-009 | N个数求和 | [Java](PAT/src/main/java/com/liaoguoyin/pat/团体程序设计天梯赛/L1009/Main.java) [Kotlin](PAT/src/main/kotlin/com/hiczp/pat/gplt/L1-009%20N个数求和.kt) |
 | L1-010 | 比较大小 | [Java](PAT/src/main/java/com/liaoguoyin/pat/团体程序设计天梯赛/L1010/Main.java) [Kotlin](PAT/src/main/kotlin/com/hiczp/pat/gplt/L1-010%20比较大小.kt) |
 | L1-011 | A-B | [Java](PAT/src/main/java/com/liaoguoyin/pat/团体程序设计天梯赛/L1011/Main.java) [Kotlin](PAT/src/main/kotlin/com/hiczp/pat/gplt/L1-011%20A-B.kt) |
 | L1-012 | 计算指数 | [Java](PAT/src/main/java/com/liaoguoyin/pat/团体程序设计天梯赛/L1012/Main.java) [Kotlin](PAT/src/main/kotlin/com/hiczp/pat/gplt/L1-012%20计算指数.kt) |
@@ -98,7 +98,7 @@ PAT 团体程序设计天梯赛-练习集
 | L2-019 | 悄悄关注 | [Java](PAT/src/main/java/com/liaoguoyin/pat/团体程序设计天梯赛/L2019/Main.java) |
 | L2-020 | 功夫传人 | |
 | L2-021 | 点赞狂魔 | |
-| L2-022 | 重排链表 | |
+| L2-022 | 重排链表 | [Java](PAT/src/main/java/com/liaoguoyin/pat/团体程序设计天梯赛/L2022/Main.java) |
 | L2-023 | 图着色问题 | |
 | L2-024 | 部落 | |
 | L2-025 | 分而治之 | |
