@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.StringTokenizer;
 
@@ -13,6 +12,7 @@ import java.util.StringTokenizer;
  */
 public class Main {
     public static void main(String[] args) throws IOException {
+        System.out.println(gcd(5, 22));
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(bufferedReader.readLine());
         List<String> stringList = new ArrayList<>(N);
@@ -22,24 +22,21 @@ public class Main {
             stringList.add(stringTokenizer.nextToken());
         }
 
-        // 找分母set里面的最小公倍数
-        Collections.sort(stringList, (o1, o2) -> Integer.parseInt(o1.split("/")[1]) - Integer.parseInt(o2.split("/")[1]));
-        int common = maxCommonInt(Integer.parseInt(stringList.get(0).split("/")[1]), Integer.parseInt(stringList.get(1).split("/")[1]));
+
+        System.out.println(N);
         System.out.println(stringList);
-        System.out.println(common);
+
     }
 
-    private static int maxCommonInt(int i, int j) {
-        int k = 2;
-        while (k * i <= j) {
-            k++;
+    static int gcd(int a, int b) {
+        int k = 1;
+
+        while (k != 0) {
+            k = a % b;
+            a = b;
+            b = k;
         }
 
-        if (k * i == j) {
-            return k;
-        } else {
-            return i * j;
-        }
-
+        return b;
     }
 }

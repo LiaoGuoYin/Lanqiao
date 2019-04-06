@@ -3,94 +3,72 @@ package com.liaoguoyin.pat.团体程序设计天梯赛.L2002;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
-    static LinkedList linkedList = new LinkedList();
-    static int count = 0;
-
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String line = bufferedReader.readLine();
-        int firstLocation = Integer.parseInt(line.split(" ")[0]);
-        int capacity = Integer.parseInt(line.split(" ")[1]);
+        String tmp = bufferedReader.readLine();
+        int headAddress = Integer.parseInt(tmp.split(" ")[0]);
+        int N = Integer.parseInt(tmp.split(" ")[1]);
 
-        System.out.println(firstLocation + " " + capacity);
-        String[] allNodes = new String[capacity];
-        for (int i = 0; i < capacity; i++) {
-            allNodes[i] = bufferedReader.readLine();
-        }
-
-        System.out.println(Arrays.toString(allNodes));
-        while (count <= capacity) {
-            addNode(allNodes, "-1");
-        }
-
-    }
-
-    public static void addNode(String[] strings, String nextLocation) {
-
-        for (int i = 0; i < strings.length; i++) {
-            if (nextLocation.equals(strings[i].split(" ")[0])) {
-                linkedList.addHead(strings[i].split(" ")[1]);
-                nextLocation = strings[i].split(" ")[2];
-                count++;
-                addNode(strings, nextLocation);
+        String[] strings = new String[N];
+        Deque<Node> deque = new ArrayDeque<>();
+        Deque<Node> repeatDeque = new ArrayDeque<>();
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < N; i++) {
+            strings[i] = bufferedReader.readLine();
+            if (Integer.parseInt(strings[i].split(" ")[0]) == headAddress) {
+                int address = Integer.parseInt(strings[i].split(" ")[0]);
+                int data = Integer.parseInt(strings[i].split(" ")[1]);
+                int next = Integer.parseInt(strings[i].split(" ")[2]);
+                deque.addLast(new Node(address, data, next));
+                map.put(Math.abs(data), 1);
             }
         }
 
+        while (deque.size() + repeatDeque.size() != N) {
+            for (int i = 0; i < N; i++) {
+                int address = Integer.parseInt(strings[i].split(" ")[0]);
+                int data = Integer.parseInt(strings[i].split(" ")[1]);
+                int next = Integer.parseInt(strings[i].split(" ")[2]);
+
+                if (deque.getLast().next == address) {
+                    deque.addLast(new Node(address, data, next));
+                }
+            }
+        }
+
+
+        for (int i = 0; i < deque.size(); ) {
+            System.out.println(deque.poll().toString());
+        }
+
+        System.out.println("repeat");
+        for (int i = 0; i < repeatDeque.size(); ) {
+            System.out.println(repeatDeque.poll().toString());
+        }
     }
 }
 
-class LinkedList {
-    private int location;
-    private Node head;
-    private Node tail;
-    private int size;
 
-    public LinkedList() {
-        head = null;
-        tail = null;
-        this.size = 0;
+class Node {
+    int address;
+    int data;
+    int next;
+
+    Node(int address, int data, int next) {
+        this.address = address;
+        this.data = data;
+        this.next = next;
     }
 
-    public void addTail(Object object) {
-        Node node = new Node(object);
-        if (size == 0) {
-            tail = node;
-            head = node;
-            size++;
-        } else {
-            tail.next = node;
-            tail = node;
-            size++;
-        }
+    public String toString() {
+        return String.format("%05d %d %05d", address, data, next);
     }
-
-    public void addHead(Object object) {
-        Node node = new Node(object);
-        if (size == 0) {
-            tail = node;
-            head = node;
-            size++;
-        } else {
-            node.next = head;
-            head = node;
-            size++;
-        }
-    }
-
-    class Node {
-        private Node location;
-        private Object data;
-        private Node next;
-
-        public Node(Object object) {
-            this.data = object;
-        }
-    }
-
 
 }
-
 
